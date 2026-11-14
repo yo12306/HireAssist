@@ -15,6 +15,12 @@ what a session decided, and rewriting it destroys the record of when and why som
 
 ---
 
+## 2026-11-14 18:36 — R2's mitigation says same code, not same images
+
+- **Compose and Kubernetes run the same code, not the same images.** Compose runs the AI Service
+  from source in a `uv` image; the cluster builds one of its own. `RISK-MATRIX.md` R2 now says code.
+- Outstanding: the cluster has still not been run end to end.
+
 ## 2026-11-14 15:35 — Risk R2 narrowed now that Compliance & Insights has manifests
 
 - **R2 loses a cause but keeps its score.** The 00:10 entry said Compliance & Insights, its

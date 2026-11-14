@@ -45,8 +45,8 @@ deployment does, and the Compose stack keeps working. *Occurrence 6*: the thirte
 manifests have never been applied together — two of them were only written on 14 November — and
 a first run usually finds something. *Detection 6*: nothing checks them until someone deploys.
 **Mitigation:** run `deploy/k8s/up.sh` on a one-node kind cluster before any release, with enough
-free disk; both platforms already run the same images with the same variables, which narrows what
-can differ.
+free disk; both platforms already run the same code configured by the same variables, which
+narrows what can differ.
 
 **R3 — personal data outlives its purpose (RPN 189).** *Severity 9*: PDPA is the design force
 the proposal puts first. *Occurrence 3*: erasure and retention are implemented, not planned.
